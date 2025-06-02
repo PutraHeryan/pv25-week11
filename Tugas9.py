@@ -40,7 +40,6 @@ class BookManager(QMainWindow):
         self.author_input = QLineEdit()
         self.year_input = QLineEdit()
 
-        # Clipboard Paste Button
         paste_button = QPushButton("Paste from Clipboard")
         paste_button.clicked.connect(self.paste_from_clipboard)
 
@@ -74,7 +73,6 @@ class BookManager(QMainWindow):
         self.setCentralWidget(central_widget)
 
     def create_dock(self):
-        # Search bar moved to a Dock Widget
         dock = QDockWidget("Pencarian Judul", self)
         dock.setAllowedAreas(Qt.DockWidgetArea.AllDockWidgetAreas)
         search_widget = QWidget()
